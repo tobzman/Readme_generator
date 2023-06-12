@@ -59,6 +59,26 @@ inquirer
       ? console.log("Success!")
       : console.log("You forgot your password already?!")
   );
-function generateREADME(answers){
+function generateREADME(answers) {
+  return `#${answers.projectTitle}
+  ${answers.projectDescription}
+  ${answers.installation}
+  ${answers.usage}
+  ${answers.contribution}
+  ${answers.tests}
+  ${answers.license}
+  ${answers.githubUsername}
+  ${answers.email}
+`;
 
 }
+inquirer.prompt(questions).then((answers) => {
+  const readmeContent = generateREADME(answers);
+  fs.writeFile('ReadMe.md', readmeContent, (err) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log('README.md file generated successfully!');
+    }
+  });
+});
