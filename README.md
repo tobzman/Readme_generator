@@ -28,7 +28,9 @@ To use the project, follow these steps:
 2. Answer the prompted questions to provide information about your project.
 3. Once you have answered all the questions, a README.md file will be generated in the project directory.
 
-.
+## Video
+
+<video src="Readme%20generator.mp4" controls title="Readme_generator"></video>
 
 ## Tests
 
