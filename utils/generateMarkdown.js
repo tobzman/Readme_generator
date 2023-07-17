@@ -32,13 +32,32 @@ function generateMarkdown(answers) {
    ## Description
   ${answers.projectDescription}
  ## Table of Contents
-  -[Installation]${answers.installation}
-  -[Usage]${answers.usage}
-  -[contribution]${answers.contribution}
-  -[tests]${answers.tests}
-  -[license]${answers.license}
-  -[gitUsername]${answers.gitUsername}
-  -[email]${answers.email}
+  -[Installation](#installation)
+  -[Usage](#usage)
+  -[contribution](#contribution)
+  -[tests](#tests)
+  -[license](#license)
+  -[gitUsername](#gitUsername)
+  -[email(#email)
+## Installation
+To install necessary dependencies, run the following command:
+\`\`\`
+${answers.installation}
+\`\`\`
+## Usage
+${answers.usage}
+## Contribution
+${answers.contribution}
+## Tests
+To run tests, run the following command:
+\`\`\`
+${answers.tests}
+\`\`\`
+##License
+${answers.license}
+\`\`\`
+## Questions
+If you have any questions about the repo, open an issue or contact me directly at ${answers.email}. 
 `;
 }
 
