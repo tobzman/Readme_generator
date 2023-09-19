@@ -1,57 +1,43 @@
-function renderLicenseBadge(license) {
-  if (license) {
-    return `![License](https://img.shields.io/badge/license-MIT-blue.svg)`;
-  }
-  return "";
-}
+const {
+  renderLicenseBadge,
+  renderLicenseLink,
+  renderLicenseSection,
+} = require("./license");
 
-function renderLicenseLink(license) {
-  if (license !== "None") {
-    return `[License](#license)`;
-  }
-  return "";
-}
-
-function renderLicenseSection(license) {
-  if (license !== "None") {
-    return `## License\n${license}`;
-  }
-  return "";
-}
 function generateMarkdown(data) {
-  return `# ${data.title}${renderLicenseBadge(data.license)}
+  return `# ${data.projectTitle}${renderLicenseBadge(data.license)}
 
 ## Description
-${data.description}
+${data.projectDescription}
 
 ## Table of Contents
 - [Project Description](#Description)
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Contribution](#Contributing)
+- [Contributing](#Contributing)
 - [Testing](#Testing)
 - ${renderLicenseLink(data.license)}
 - [Questions](#Questions)
 
 ## Installation
-${data.install}
+${data.installation}
 
 ## Usage
 ${data.usage}
 
 ## Contributing
-${data.contribute}
+${data.contribution}
 
 ## Testing
-${data.test}
+${data.tests}
 
 ${renderLicenseSection(data.license)}
 
 ## Questions
-  If you have any questions about the repo, contact ${answers.gitUsername} at ${
-    answers.email
+If you have any questions about the repo, contact ${data.githubUsername} at ${
+    data.email
   }.
-  `;
+`;
 }
 
 module.exports = generateMarkdown;

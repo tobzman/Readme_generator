@@ -1,9 +1,31 @@
-# Professional README Generator
+# ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
 
-This is a command-line application that dynamically generates a professional README.md file from a user's input. It uses the Inquirer package to prompt the user for information about their application repository and generates a high-quality README with sections including Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
 
 ## Table of Contents
+- [Project Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [Testing](#Testing)
+- [License](#license)
+- [Questions](#Questions)
 
--[Installation]To install the application, follow these steps: -[Usage]1. Clone the repository. -[contribution]Contributions are welcome! -[tests]To run the tests, use the following command: -[license]MIT -[gitUsername]undefined -[email]..
+## Installation
+
+
+## Usage
+
+
+## Contributing
+
+
+## Testing
+
+
+## License
+MIT
+
+## Questions
+If you have any questions about the repo, contact  at .

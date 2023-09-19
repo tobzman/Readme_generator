@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 const fs = require("fs");
+
 inquirer
   .prompt([
     {
@@ -52,9 +53,10 @@ inquirer
   ])
   .then((answers) => {
     const readmeContent = generateMarkdown(answers);
+
     fs.writeFile("README.md", readmeContent, (err) => {
       if (err) {
-        console.error(err);
+        console.error("Error writing README.md:", err);
       } else {
         console.log("README.md file generated successfully!");
       }

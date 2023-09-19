@@ -5,13 +5,22 @@ function renderLicenseBadge(license) {
   return "";
 }
 
-function renderLicenseSection(license) {
-  if (license) {
-    return `## License
-
-This project is licensed under the ${license} license.`;
+function renderLicenseLink(license) {
+  if (license !== "None") {
+    return `[License](#license)`;
   }
   return "";
 }
 
-module.exports = { renderLicenseBadge, renderLicenseSection };
+function renderLicenseSection(license) {
+  if (license !== "None") {
+    return `## License\n${license}`;
+  }
+  return "";
+}
+
+module.exports = {
+  renderLicenseBadge,
+  renderLicenseLink,
+  renderLicenseSection,
+};
