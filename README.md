@@ -3,6 +3,7 @@
 ## Walkthrough Video
 
 <video src="Readme%20generator.mp4" controls title="Title"></video>
+
 ## Description
 
 When creating an open source project on GitHub, it's essential to have a high-quality README for the app. This README generator is a command-line application that helps users create professional README files quickly and easily. It uses the Inquirer package to gather user input and dynamically generates a README.md file based on the provided information.
