@@ -2,7 +2,7 @@
 
 ## Walkthrough Video
 
-<video src="Readme%20generator.mp4" controls title="Title"></video>
+![Alt text](<week 09 walkthrough video.gif>)
 
 ## Description
 
@@ -10,6 +10,7 @@ When creating an open source project on GitHub, it's essential to have a high-qu
 
 ## Table of Contents
 
+- [Walkthroughvideo](#walkthroughvideo)
 - [Your Task](#your-task)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
@@ -17,7 +18,6 @@ When creating an open source project on GitHub, it's essential to have a high-qu
 - [Usage](#usage)
 - [Tests](#tests)
 - [Questions](#questions)
-- [Walkthroughvideo](#walkthroughvideo)
 
 ## Your Task
 
