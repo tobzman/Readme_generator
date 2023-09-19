@@ -79,4 +79,4 @@ If you have any questions about this repository or need further assistance, plea
 
 ## Walkthrough Video
 
-<video src="Readme%20generator.mp4" controls title="Title"Walkthrough Video></video>
+<video src="Readme%20generator.mp4" controls title="Title"></video>
